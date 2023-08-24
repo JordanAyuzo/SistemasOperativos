@@ -10,7 +10,6 @@
 #define CLIENTES_ESPERANDO 0
 #define TOTAL_CLIENTES 10
 
-
 void *barbero(void *s);
 void *cliente(void *s);
 void cortarPelo();

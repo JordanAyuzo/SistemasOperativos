@@ -91,7 +91,7 @@ void* cliente(void* arg) {
     //sem_wait(&//sem_barbero);
     enqueue(sillon, nombre);
     //sem_post(&//sem_sillon);
-    sleep(1);
+    
 }
 
 int main() {

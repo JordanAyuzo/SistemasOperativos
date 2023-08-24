@@ -24,8 +24,8 @@ int main(){
    //p3 = dirección de una función (código del hilo en este caso)
    //p4 = NULL
 
-
-   pthread_create(&hilo_2, NULL, proceso_2, NULL);
+   int x=5;
+   pthread_create(&hilo_2, NULL, proceso_2, (void * )&x);
    pthread_join(hilo_1, NULL); //hace que el hilo principal espere a que el hilo 1 termine
    pthread_join(hilo_2, NULL);
 
